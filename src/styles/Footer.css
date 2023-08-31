@@ -1,0 +1,9 @@
+.conteneur_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+}

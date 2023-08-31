@@ -1,0 +1,35 @@
+.conteneur_header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /*width: 100%;*/
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav :visited{
+    color: #FF6060;
+}
+
+nav a[href="/"]{
+    position: relative;
+    right: 25%;
+}
+
+@media all and (max-width: 767px) {
+    img{
+        width: 70%;
+    }
+}

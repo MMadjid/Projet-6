@@ -1,0 +1,43 @@
+@use '../../utils/styles' as *;
+
+.error {
+	@include flex-column;
+	align-items: center;
+	color: $color-primary;
+
+	h2 {
+		font-weight: 700;
+		font-size: 12em;
+
+		@media (max-width: 700px) {
+			font-size: 10em;
+		}
+
+		@media (max-width: 550px) {
+			font-size: 8em;
+		}
+
+		@media (max-width: 360px) {
+			font-size: 6em;
+		}
+	}
+
+	h3 {
+		margin: 100px 0;
+		font-size: 1.4em;
+		text-align: center;
+
+		@media (max-width: 360px) {
+			margin: 70px 0;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+		margin-bottom: 50px;
+
+		@media (max-width: 360px) {
+			font-size: 0.8em;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.rating-wrapper {
+	display: flex;
+
+	img {
+		@media (max-width: 700px) {
+			width: 20px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@use '../../utils/styles' as *;
+
+.banner {
+	position: relative;
+
+	img {
+		@include full-width-set-height(200px);
+		border-radius: 25px;
+		object-fit: cover;
+
+		@media (max-width: 700px) {
+			height: 150px;
+			border-radius: 10px;
+		}
+
+		@media (max-width: 360px) {
+			height: 100px;
+		}
+	}
+
+	.dark-bg {
+		@include full-width-set-height(200px);
+		border-radius: 25px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: 700px) {
+			height: 150px;
+			border-radius: 10px;
+			justify-content: flex-start;
+			padding: 20px;
+		}
+
+		@media (max-width: 360px) {
+			height: 100px;
+		}
+	}
+
+	h1 {
+		color: white;
+
+		@media (max-width: 700px) {
+			font-size: 1.4em;
+		}
+	}
+}

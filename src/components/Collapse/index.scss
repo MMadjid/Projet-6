@@ -1,0 +1,70 @@
+@use '../../utils/styles' as *;
+
+.collapse-wrapper {
+	margin: 30px 0;
+	overflow: hidden;
+	transition: max-height 600ms ease-in;
+	max-height: 500px;
+
+	@media (max-width: 700px) {
+		margin: 20px 0;
+	}
+
+	.collapse-title {
+		color: white;
+		background-color: $color-primary;
+		height: 50px;
+		padding: 10px;
+		border-radius: 7px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 700px) {
+			height: 40px;
+			font-size: 0.7em;
+		}
+
+		@media (max-width: 360px) {
+			height: 30px;
+			font-size: 0.6em;
+		}
+
+		img {
+			transition: transform, 500ms;
+		}
+	}
+
+	.content {
+		color: $color-primary;
+		background-color: $color-secondary;
+		padding: 25px 20px 20px 20px;
+		font-weight: 400;
+		position: relative;
+		top: -8px;
+		z-index: -1;
+		border-radius: 7px;
+		transition: transform, 600ms;
+	}
+}
+
+.collapse-wrapper.closed {
+	max-height: 50px;
+	transition: max-height 300ms ease-out;
+
+	@media (max-width: 700px) {
+		max-height: 40px;
+	}
+
+	@media (max-width: 360px) {
+		max-height: 30px;
+	}
+	//effet de déplacement lors de l'ouverture ou de la fermeture//
+	.content {
+		transform: translateY(-100%);
+	}
+
+	img {
+		transform: rotate(180deg);
+	}
+}

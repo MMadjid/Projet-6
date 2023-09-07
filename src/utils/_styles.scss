@@ -1,0 +1,12 @@
+$color-primary: #ff6060;
+$color-secondary: #f6f6f6;
+
+@mixin full-width-set-height($height) {
+	width: 100%;
+	height: $height;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
